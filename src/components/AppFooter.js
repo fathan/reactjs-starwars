@@ -1,20 +1,20 @@
 import React, { Component } from 'react'
 
-class Footer extends Component {
+class AppFooter extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      title: 'Website building with technology React.JS'
+      title: 'SWAPI building with React.JS'
     }
   }
 
   render () {
     return (
-      <div className="Footer">
+      <div className="AppFooter">
         <p>{ this.state.title }</p>
       </div>
     )
   }
 }
 
-export default Footer
+export default AppFooter
