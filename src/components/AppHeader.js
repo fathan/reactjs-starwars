@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from './../logo.svg'
 import {
   Collapse,
   Navbar,
@@ -7,10 +6,7 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap'
+  NavLink } from 'reactstrap'
 
 class AppHeader extends React.Component {
   constructor(props){
