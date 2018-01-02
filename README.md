@@ -1,4 +1,4 @@
-## Starwars API with React.JS
+## Starwars API with React.JS from documentatioin http://swapi.co
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
