@@ -1,4 +1,5 @@
 import React from 'react'
+import {BrowserRouter as Router} from 'react-router-dom'
 import {
   Collapse,
   Navbar,
@@ -30,11 +31,33 @@ class AppHeader extends React.Component {
           <NavbarBrand href="/">SWAPI</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink href="/components/">Components</NavLink>
-              </NavItem>
-            </Nav>
+            <Router>
+              <div>
+                <Nav className="ml-auto" navbar>
+                  <NavItem>
+                    <NavLink href="/">Home</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="/films">Films</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="/people/">People</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="/planets/">Planets</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="/species/">Species</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="/starships/">Starships</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="/vehicles/">Vehicles</NavLink>
+                  </NavItem>
+                </Nav>
+              </div>
+            </Router>
           </Collapse>
         </Navbar>
       </div>
